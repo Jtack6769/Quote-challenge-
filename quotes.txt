@@ -1,3 +1,3 @@
-Shut up quote | show | character | category | difficulty
-Live Long And Prosper| Star Trek | Spok | Science Fiction | Easy
-Shut up Meathead | All In the Family | Archy Bunker | Classic T.V. | Hard
+Quote | show | character | category | difficulty
+Live Long And Prosper| Star Trek | Spock | Science Fiction | Easy
+Shut up Meathead | All In the Family | Archie Bunker | Classic T.V. | Hard
