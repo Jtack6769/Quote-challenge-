@@ -1,1 +1,2 @@
-quote | show | charitor | category | difficulty|
+quote | show | charitor | category | difficulty
+Live Long And Prosper| Star Trek | Spok | Science Fiction | Easy
