@@ -1,4 +1,4 @@
-# Quote-challenge-
+# Quote-challenge
 
 A challenging game designed for 1 or 2 players.
 
