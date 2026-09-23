@@ -1,12 +1,138 @@
-!doctype html>
-html
-head
-title>Quotechallenge</title>
-</head>
-body
-\h1/
-Quotechallenge
-\h1/
-\body/
-\html/
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quote Challenge</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #183d68 0%, #081727 48%, #030912 100%);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 28px 15px 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      letter-spacing: 2px;
+      color: #9edcff;
+      text-shadow:
+        0 0 10px rgba(79, 185, 255, 0.8),
+        0 0 24px rgba(0, 128, 255, 0.35);
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #c8eaff;
+      font-size: 1rem;
+    }
+
+    main {
+      width: min(94%, 850px);
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .panel {
+      background: rgba(7, 24, 42, 0.9);
+      border: 1px solid #347eb5;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 18px 0;
+      box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.35),
+        inset 0 0 25px rgba(44, 137, 204, 0.08);
+    }
+
+    .scoreboard {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .player-box {
+      padding: 16px 10px;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #0c2946, #12395d);
+      border: 1px solid #4ba3dd;
+    }
+
+    .player-name {
+      font-size: 1rem;
+      color: #b9e6ff;
+    }
+
+    .score {
+      margin-top: 5px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .round-info {
+      color: #8ed5ff;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-size: clamp(1.3rem, 5vw, 2rem);
+      line-height: 1.45;
+      font-style: italic;
+      border-radius: 18px;
+      background: linear-gradient(
+        145deg,
+        rgba(18, 57, 93, 0.95),
+        rgba(6, 23, 41, 0.95)
+      );
+      border: 1px solid #46a6e1;
+    }
+
+    .answer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #4b9dd3;
+      border-radius: 12px;
+      background: #071827;
+      color: white;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #9cddff;
+      box-shadow: 0 0 8px rgba(100, 190, 255, 0.4);
+    }
+
+    button {
+      border: none;
+      border-radius: 13px;
+      padding: 14px 18
