@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head><style>
+.portrait-mark {
+  width: min(58vw, 240px);
+  margin: 28px auto 0;
+  pointer-events: none;
+  opacity: 0.045;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center, black 25%, transparent 72%
+  );
+  mask-image: radial-gradient(
+    ellipse at center, black 25%, transparent 72%
+  );
+}
+.portrait-mark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: sepia(1) saturate(1.4) blur(2.5px);
+}
+</style>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#050505">
@@ -550,12 +570,4 @@ function dailyCheck(){
 
 function board(){
   $('leaders').innerHTML=db.winners.length
-    ?'<table><thead><tr><th>Slot</th><th>Winner</th><th>Win score</th><th>Lifetime</th></tr></thead><tbody>'+
-      db.winners.slice(0,10).map((n,i)=>
-        `<tr><td>${i+1}</td><td>${esc(n)}</td><td>${person(n).last}</td><td>${person(n).total}</td></tr>`
-      ).join('')+'</tbody></table>'
-    :'<p class="feedback">The first slot is waiting. Finish a game to put your name on the board.</p>';
-}
-</script>
-</body>
-</html>
+    ?'<table><thead><tr><th>Slot<
